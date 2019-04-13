@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>HTML записки</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<a href="index.html"><button class="button"><i class="fa fa-home"></i> Home</button></a>
+	<title>HTML Notes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-<h1 id="top" >HTML записки</h1>
+	<header>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<a href="index.html"><button class="button"><i class="fa fa-home"></i> Home</button></a>
+<!-- ось робочий варіант, без помилок (але тоді без значка):
+	<a href="index.html" class="button">Home</a> -->
+</header>
+<h1 id="top" >HTML Notes</h1>
 
 				<a href="htmlpage.html" class="message html htmlpage">HTML</a>
 				<a href="csspage.html" class="message css">CSS</a>
@@ -17,54 +21,53 @@
 				<a href="javascriptpage.html" class="message js">JavaScript</a>
 				<a href="angularpage.html" class="message angular">Angular</a>	
 
- <h2>Часто вживані теги та їх атрибути</h2>
+ <h2>Most commonly used tags in HTML</h2>
 
          <table class="table">
 
-			<tr><td><b>№</b></td><td><b>Тег</b></td><td><b>Атрибути</b> </td></tr>
+			<tr><td><b>№</b></td><td><b>Tags</b></td><td><b>Attributes</b> </td></tr>
 
-			<tr><td>1</td><td><a href="#" title="Контейнер, який містить в собі весь вміст веб-сторінки, включаючи теги <head> і <body>">&lt;html&gt;</a></td><td>title, manifest, універсальні атрибути*</td>
+			<tr><td>1</td><td><a href="#" title="Контейнер, який містить в собі весь вміст веб-сторінки, включаючи теги <head> і <body>">&lt;html&gt;</a></td><td>title, manifest, global attributes&ast;</td>
 
-			<tr><td>2</td><td><a href="#" title="В середині контейнера &lt;head&gt; можуть розміщуватись наступні елементи:&lt;title&gt;, &lt;base&gt;, &lt;basefont&gt;, &lt;bgsound&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;script&gt;, &lt;style&gt;;">&lt;head&gt;</a></td><td>profile, універсальні атрибути*  </td></tr>
+			<tr><td>2</td><td><a href="#" title="В середині контейнера &lt;head&gt; можуть розміщуватись наступні елементи:&lt;title&gt;, &lt;base&gt;, &lt;basefont&gt;, &lt;bgsound&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;script&gt;, &lt;style&gt;;">&lt;head&gt;</a></td><td>profile, global attributes&ast;</td></tr>
 
 			<tr><td>3</td><td>&lt;meta&gt;</td><td>charset, content;</td></tr>
 
 			<tr><td>4</td><td>&lt;title&gt;</td><td>---</td></tr>
 
-			<tr><td>5</td><td>&lt;link&gt;</td><td>rel, type, href, charset, media, універсальні атрибути*</td></tr>
+			<tr><td>5</td><td>&lt;link&gt;</td><td>rel, type, href, charset, media, global attributes&ast;</td></tr>
 
 			<tr><td>6</td><td><a href="#" title="Елемент <body> призначений для зберігання вмісту веб-сторінки (контенту), що відображається у вікні браузера. Інформацію, яка виводитиься в документі, слід розташовувати саме всередині контейнера <body>. До такої інформації належить текст, зображення, теги, скрипти JavaScript і т.д.">&lt;body&gt;</a></td><td>alink, background, bgcolor, bgproperties, margin, link,<br>
-			scroll, text, vlink, універсальні атрибути*</td></tr>
+			scroll, text, vlink, global attributes&ast;</td></tr>
 
 			<tr><td>7</td><td><a href="#" title="Тег <a> є одним з важливих елементів HTML і призначений для створення посилань. Залежно від присутності атрибутів name або href, тег <a> встановлює посилання або якір. Якорем називається закладка всередині сторінки, яку можна вказати в якості мети посилання. При використанні посилання, яка вказує на якір, відбувається перехід до закладки всередині веб-сторінки.">&lt;a&gt;</a></td><td>href, name, accesskey, coords, download, rel,<br> 
-			rev, shape, target, hreflang, універсальні атрибути* </td></tr>
+			rev, shape, target, hreflang, global attributes&ast;</td></tr>
 
-			<tr><td>8</td><td>&lt;h1&gt;-&lt;h6&gt;</td><td>aling, універсальні атрибути*</td></tr>
+			<tr><td>8</td><td>&lt;h1&gt;-&lt;h6&gt;</td><td>aling, global attributes&ast;</td></tr>
 
-			<tr><td>9</td><td>&lt;div&gt;</td><td>aling, універсальні атрибути*</td></tr>
+			<tr><td>9</td><td>&lt;div&gt;</td><td>aling, global attributes&ast;</td></tr>
 
-			<tr><td>10</td><td>&lt;p&gt;</td><td>aling, універсальні атрибути*</td></tr>
+			<tr><td>10</td><td>&lt;p&gt;</td><td>aling, global attributes&ast;</td></tr>
 
 			<tr><td>11</td><td><a href="#" title="Тег <li> визначає окремий елемент списку. Зовнішній тег <ul> або <ol> встановлює тип списку - маркований або нумерований.">&lt;li&gt;</a></td><td>type="disc | circle | square", type="A | a | I | i | 1",<br>
-			value="число", універсальні атрибути*</td></tr>
+			value="число", global attributes&ast;</td></tr>
 
-			<tr><td>12</td><td>&lt;strong&gt;,&lt;b&gt;</td><td>універсальні атрибути*</td></tr>
+			<tr><td>12</td><td>&lt;strong&gt;,&lt;b&gt;</td><td>global attributes&ast;</td></tr>
 
-			<tr><td>13</td><td>&lt;em&gt;</td><td>універсальні атрибути*</td></tr>
+			<tr><td>13</td><td>&lt;em&gt;</td><td>global attributes&ast;</td></tr>
 
-			<tr><td>14</td><td>&lt;img&gt;</td><td>src="URL" alt="альтернативний текст", align,<br> border,
-			 width, універсальні атрибути*</td></tr>
+			<tr><td>14</td><td>&lt;img&gt;</td><td>src="URL" alt="альтернативний текст", align,<br> border,width, global attributes&ast;</td></tr>
 
-			 <tr><td>15</td><td>&lt;br&gt;</td><td>clear="all | left | right | none", універсальні атрибути*</td></tr>
+			 <tr><td>15</td><td>&lt;br&gt;</td><td>clear="all | left | right | none", global attributes&ast;</td></tr>
 
-			 <tr><td>16</td><td><a href="#" title="Основний атрибут тегу <input>, що оприділяє вид елементу - type. Він дозволяє задавати такі елементи форми: текстове поле (text), поле з паролем (password), перемикач (radio), прапорець (checkbox), приховане поле (hidden), кнопка (button), кнопка для відправки форми (submit), кнопка для очищення форми (reset), поле для відправки файлу (file) і кнопка із зображенням (image). Для кожного елемента існує свій список атрибутів, які визначають його вид і характеристики. Крім того, в HTML5 додано ще більше десятки нових елементів.">&lt;input&gt;</a></td><td>type, value, name..., універсальні атрибути*</td></tr>
+			 <tr><td>16</td><td><a href="#" title="Основний атрибут тегу <input>, що оприділяє вид елементу - type. Він дозволяє задавати такі елементи форми: текстове поле (text), поле з паролем (password), перемикач (radio), прапорець (checkbox), приховане поле (hidden), кнопка (button), кнопка для відправки форми (submit), кнопка для очищення форми (reset), поле для відправки файлу (file) і кнопка із зображенням (image). Для кожного елемента існує свій список атрибутів, які визначають його вид і характеристики. Крім того, в HTML5 додано ще більше десятки нових елементів.">&lt;input&gt;</a></td><td>type, value, name..., global attributes&ast;</td></tr>
 
 
 		</table>
 
 		
 
-			<i> *Універсальні атрибути:</i>
+			<i> &ast;Global attributes:</i>
 		<ul class="a">
 			<li>&lt;accesskey&gt;</li>
 			<li>&lt;class&gt;</li>
@@ -86,8 +89,9 @@
 			<tr><td>HTML validator</td><td><a href="https://validator.w3.org/#validate_by_input" target="_blank">https://validator.w3.org</a></td></tr>
 			<tr><td>CSS validator</td><td><a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">https://jigsaw.w3.org/css-validator</a></td></tr>
 			<tr><td>Browser Statistics</td><td><a href="https://www.w3schools.com/browsers/default.asp" target="_blank">https://www.w3schools.com/browsers</a></td></tr>
-			tr><td>Kinds of content section</td><td><a href="https://www.w3.org/TR/html5/dom.html#kinds-of-content" target="_blank">https://www.w3.org/TR/html5/dom.html#kinds-of-content</a></td></tr>
+			<tr><td>Kinds of content section</td><td><a href="https://www.w3.org/TR/html5/dom.html#kinds-of-content" target="_blank">https://www.w3.org/TR/html5/dom.html#kinds-of-content</a></td></tr>
 			<tr><td>The W3C HTML Standard</td><td><a href="https://www.w3.org/TR/html5" target="_blank">www.w3.org/TR/html5</a></td></tr>
+			<tr><td>Character Entity Reference Chart</td><td><a href="https://dev.w3.org/html5/html-author/charref" target="_blank">https://dev.w3.org/html5/html-author/charref</a></td></tr>
 
 		</table>
 
@@ -137,9 +141,9 @@
 
 </body>
 <footer><hr>
-<i> Пробний варіант. Матеріали будуть доповнюватись.
+<i> Test realese
 </i>
-<p>&copy; 2019 Василь Габалевич
+<p>&copy; 2019 Vasyl Habalevych
 	
 </p>
 </footer>
